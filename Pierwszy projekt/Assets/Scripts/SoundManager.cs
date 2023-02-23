@@ -17,11 +17,14 @@ public class SoundManager : MonoBehaviour
     public AudioClip winAudio;
     public AudioClip destroyAudio;
     public AudioClip musicAudio;
+    public AudioClip start321;
     AudioSource audioSource;
     
     void Start()
     {
+
         audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(start321);
     }
 
     public void PlaySound(Sounds sound)

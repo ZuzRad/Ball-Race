@@ -29,11 +29,11 @@ public class NextLevel : MonoBehaviour
                 
                 if (other.CompareTag("Player"))
                 {
-                    gameManager.winText.text = "Yelling womans win!";
+                    gameManager.winText.text = "PLAYER1 WIN";
                 }
                 if (other.CompareTag("Player2"))
                 {
-                    gameManager.winText.text = "Cat win!";
+                    gameManager.winText.text = "PLAYER2 WIN";
 
                 }
             }
@@ -41,11 +41,11 @@ public class NextLevel : MonoBehaviour
             {
                 if (other.CompareTag("Player"))
                 {
-                    gameManager.winText.text = "Cat win!";
+                    gameManager.winText.text = "PLAYER2 WIN";
                 }
                 if (other.CompareTag("Player2"))
                 {
-                    gameManager.winText.text = "Yelling womans win!";
+                    gameManager.winText.text = "PLAYER1 WIN";
                 }
             }
 
