@@ -16,20 +16,36 @@ public class AddJump : MonoBehaviour
     {
        movement=GameObject.FindGameObjectWithTag("Player").GetComponent<Movement>();
        movement2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Movement>();
-       soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if(other.CompareTag("Player"))
         {
             soundManager.PlaySound(SoundManager.Sounds.Bonus);
-            Destroy(gameObject);
-            if (other.CompareTag("Player"))
+            if(SceneManager.GetActiveScene().buildIndex == 1)
                 movement.spaceAmount++;
-            else if (other.CompareTag("Player2"))
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+                movement.originalPosition=new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
+
+            Destroy(gameObject);
+           
+        }
+
+        if (other.CompareTag("Player2"))
+        {
+            soundManager.PlaySound(SoundManager.Sounds.Bonus);
+            if (SceneManager.GetActiveScene().buildIndex == 1)
                 movement2.spaceAmount++;
 
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+                movement2.originalPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
+
+            Destroy(gameObject);
+            
         }
-    }
+     }
+
+    
 }

@@ -11,6 +11,8 @@ public class SoundManager : MonoBehaviour
         Bonus, Win , Destroy, Music
 
     }
+
+
     public AudioClip bonusAudio;
     public AudioClip winAudio;
     public AudioClip destroyAudio;
@@ -30,27 +32,28 @@ public class SoundManager : MonoBehaviour
         switch (sound)
         {
             case Sounds.Bonus:
+                // audioSource.loop = false;
                 audioSource.loop = true;
                 audioSource.PlayOneShot(bonusAudio);
                 break;
-
             case Sounds.Win:
+                // audioSource.loop = false;
                 audioSource.loop = true;
                 audioSource.PlayOneShot(winAudio);
                 audioSource.volume = 0.5f;
                 break;
-
             case Sounds.Destroy:
+                // audioSource.loop = false;
                 audioSource.loop = true;
                 audioSource.PlayOneShot(destroyAudio);
                 break;
-
             case Sounds.Music:
+                
                 audioSource.PlayOneShot(musicAudio);
                 audioSource.loop = true;
                 audioSource.volume = 0.1f;
+                
                 break;
-
             default:
                 break;
         }

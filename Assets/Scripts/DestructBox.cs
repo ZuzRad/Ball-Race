@@ -11,8 +11,8 @@ public class DestructBox : MonoBehaviour
 
     private Material material;
     private int maxlife = 15;
-    private SoundManager soundManager;
     Rigidbody rb;
+    private SoundManager soundManager;
 
     void Start()
     {
@@ -33,14 +33,35 @@ public class DestructBox : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Player2"))
+        if (collision.gameObject.CompareTag("Player")|| collision.gameObject.CompareTag("Player2"))
         {
-            life -= 0.5f;
+            life-=0.5f;
+
             if (life > 0)
+            {
                 SetColor();
+            }
             else
             {
                 soundManager.PlaySound(SoundManager.Sounds.Destroy);
+                Destroy(this.gameObject);
+            }
+        }
+    }
+    
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Player2"))
+        {
+            life -= 0.5f;
+
+            if (life > 0)
+            {
+                SetColor();
+            }
+            else
+            {
                 Destroy(this.gameObject);
             }
         }
@@ -49,6 +70,15 @@ public class DestructBox : MonoBehaviour
 
     void SetColor()
     {
+        
         material.color = Color.Lerp(endColor, startColor, (float)(life - 1) / (float)(maxlife - 1));
     }
+
+    //private void OnValidate() //jeszcze przed uruchomieniem gry
+    //{
+        
+    //    material = GetComponent<MeshRenderer>().sharedMaterial;
+    //    material.color = startColor;
+
+    //}
 }
