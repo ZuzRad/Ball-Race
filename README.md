@@ -3,12 +3,12 @@
 ![ball1](https://user-images.githubusercontent.com/107064508/222977890-7a28bdc1-2d32-4f69-87b0-2d472a7e1b86.png)
 
 ## 📖 Table of Contents
-* [General Information](https://github.com/ZuzRad/Run-Of-Adventure#-general-information)
-* [Links](https://github.com/ZuzRad/Run-Of-Adventure#-links)
-* [Game Features](https://github.com/ZuzRad/Run-Of-Adventure#-game-features)
-* [Learning goals](https://github.com/ZuzRad/Run-Of-Adventure#-learning-goals)
-* [Controls](https://github.com/ZuzRad/Run-Of-Adventure#-controls)
-* [Project status](https://github.com/ZuzRad/Run-Of-Adventure#-project-status)
+* [General Information](https://github.com/ZuzRad/Ball-Race#-general-information)
+* [Links](https://github.com/ZuzRad/Ball-Race#-links)
+* [Game Features](https://github.com/ZuzRad/Ball-Race#-game-features)
+* [Learning goals](https://github.com/ZuzRad/Ball-Race#-learning-goals)
+* [Controls](https://github.com/ZuzRad/Ball-Race#-controls)
+* [Project status](https://github.com/ZuzRad/Ball-Race#-project-status)
 
 
 ## 📝 General Information
