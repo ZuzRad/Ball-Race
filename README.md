@@ -6,8 +6,8 @@
 * [General Information](https://github.com/ZuzRad/Run-Of-Adventure#-general-information)
 * [Links](https://github.com/ZuzRad/Run-Of-Adventure#-links)
 * [Game Features](https://github.com/ZuzRad/Run-Of-Adventure#-game-features)
-* [Controls](https://github.com/ZuzRad/Run-Of-Adventure#-controls)
 * [Learning goals](https://github.com/ZuzRad/Run-Of-Adventure#-learning-goals)
+* [Controls](https://github.com/ZuzRad/Run-Of-Adventure#-controls)
 * [Project status](https://github.com/ZuzRad/Run-Of-Adventure#-project-status)
 
 
@@ -26,6 +26,13 @@ List of features that the game includes.
 - Bonuses
 - Checkpoints
 
+## 💡 Learning Goals
+- Basisc of objects
+- Triggers, Collision, And Colliders
+- Basics of 3D level design
+- 3D physics rules in unity
+- Basics scripts
+- Unity interface
 
 ## 🎮 Controls
 ### Player 1
@@ -43,13 +50,7 @@ List of features that the game includes.
 | Move              | left thumstick |
 | Jump              | A              |
 
-## 💡 Learning Goals
-- Basisc of objects
-- Triggers, Collision, And Colliders
-- Basics of 3D level design
-- 3D physics rules in unity
-- Basics scripts
-- Unity interface
+
 
 ## 🌱 Project Status
 Project completed
