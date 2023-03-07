@@ -1,6 +1,6 @@
-# RUN OF ADVENTURE
+# BALL RACE
 
-![roa1](https://user-images.githubusercontent.com/107064508/222847098-b46b4535-a03b-47bb-a79f-d05b970994c5.png)
+![ball1](https://user-images.githubusercontent.com/107064508/222977890-7a28bdc1-2d32-4f69-87b0-2d472a7e1b86.png)
 
 ## 📖 Table of Contents
 * [General Information](https://github.com/ZuzRad/Run-Of-Adventure#-general-information)
