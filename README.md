@@ -10,7 +10,6 @@
 * [Controls](https://github.com/ZuzRad/Ball-Race#-controls)
 * [Project status](https://github.com/ZuzRad/Ball-Race#-project-status)
 
-
 ## 📝 General Information
 My first game in which I took my first steps in Unity.
 This is a 3D split screen game for two players. One of the players plays on the keyboard, and the other on the pad. In the game, two players compete against each other at different levels. The players control the balls, hence the name of the game.
